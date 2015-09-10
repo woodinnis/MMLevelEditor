@@ -28,6 +28,16 @@
             <string>// Set global variables for the level editor
 globalvar currentTool;
 currentTool = EMPTY;
+
+// Object variables
+wall = objWall;
+player = objPlayer;
+door = objDoor;
+up = objArrowUp;
+down = objArrowDn;
+left = objArrowLt;
+right = objArrowRt;
+trap = objTrap;
 </string>
           </argument>
         </arguments>

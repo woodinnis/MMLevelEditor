@@ -17,7 +17,7 @@ if(createY < LEVELH)
         case WALL:
         {
             if(position_empty(createX,createY))
-                instance_create(createX, createY, objWall);
+                instance_create(createX, createY, wall);
             break;
         }
         
@@ -27,14 +27,14 @@ if(createY < LEVELH)
             if(position_empty(createX,createY))
             {
                 // If a player start already exists, destroy it before placing a new one
-                if(!instance_exists(objPlayer))
-                    instance_create(createX, createY, objPlayer);
+                if(!instance_exists(player))
+                    instance_create(createX, createY, player);
                 else
                 {
-                    with(objPlayer)
+                    with(player)
                        instance_destroy();
                        
-                    instance_create(createX, createY, objPlayer);
+                    instance_create(createX, createY, player);
                 }
             }
             break;
@@ -43,19 +43,19 @@ if(createY < LEVELH)
         case DOOR:
         {                 
             // If a door already exists, destroy it before creating a new one
-            if(!instance_exists(objDoor))
+            if(!instance_exists(door))
             {
                 // Only create doors in existing wall tiles
-                if(position_meeting(createX, createY, objWall))
-                    instance_create(createX, createY, objDoor);
+                if(position_meeting(createX, createY, wall))
+                    instance_create(createX, createY, door);
             }
             else
             {
-                with(objDoor)
+                with(door)
                    instance_destroy();
                 // Only create doors in existing wall tiles
-                if(position_meeting(createX, createY, objWall))   
-                    instance_create(createX, createY, objDoor);
+                if(position_meeting(createX, createY, wall))   
+                    instance_create(createX, createY, door);
             }
             break;
         }
@@ -65,14 +65,14 @@ if(createY < LEVELH)
          {
             if(position_empty(createX,createY))
             {
-                if(!instance_exists(objArrowUp))
-                    instance_create(createX, createY, objArrowUp);
+                if(!instance_exists(up))
+                    instance_create(createX, createY, up);
                 else
                 {
-                    with(objArrowUp)
+                    with(up)
                        instance_destroy();
                        
-                    instance_create(createX, createY, objArrowUp);
+                    instance_create(createX, createY, up);
                 }
             }
             break;
@@ -81,14 +81,14 @@ if(createY < LEVELH)
         {
             if(position_empty(createX,createY))
             {
-                if(!instance_exists(objArrowDn))
-                    instance_create(createX, createY, objArrowDn);
+                if(!instance_exists(down))
+                    instance_create(createX, createY, down);
                 else
                 {
-                    with(objArrowDn)
+                    with(down)
                        instance_destroy();
                        
-                    instance_create(createX, createY, objArrowDn);
+                    instance_create(createX, createY, down);
                 }
             }
             break;
@@ -97,14 +97,14 @@ if(createY < LEVELH)
          {
             if(position_empty(createX,createY))
             {
-                if(!instance_exists(objArrowRt))
-                    instance_create(createX, createY, objArrowRt);
+                if(!instance_exists(right))
+                    instance_create(createX, createY, right);
                 else
                 {
-                    with(objArrowRt)
+                    with(right)
                        instance_destroy();
                        
-                    instance_create(createX, createY, objArrowRt);
+                    instance_create(createX, createY, right);
                 }
             }
             break;
@@ -113,14 +113,14 @@ if(createY < LEVELH)
          {
             if(position_empty(createX,createY))
             {
-                if(!instance_exists(objArrowLt))
-                    instance_create(createX, createY, objArrowLt);
+                if(!instance_exists(left))
+                    instance_create(createX, createY, left);
                 else
                 {
-                    with(objArrowLt)
+                    with(left)
                        instance_destroy();
                        
-                    instance_create(createX, createY, objArrowLt);
+                    instance_create(createX, createY, left);
                 }
             }
             break;
@@ -129,7 +129,7 @@ if(createY < LEVELH)
         case TRAP:
         {
             if(position_empty(createX,createY))
-                instance_create(createX, createY, objTrap);
+                instance_create(createX, createY, trap);
             break;
         }
         // Eraser tool
