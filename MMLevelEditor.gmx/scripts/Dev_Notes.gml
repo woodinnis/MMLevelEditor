@@ -21,3 +21,9 @@ ini Files saving
 - Located file location (%appdata%/Local/Gamedir)
 - Adjusted some var names, types for file purposes
 - Added defaultRoom var and room_exists check to create user_Room000 if none exists
+
+ini Files loading
+- Added iteration step in saveMap to properly index objects
+- Added two new keys: name, counts
+- loadMap uses counts in for loops
+- loadMap currently executes with RMB
