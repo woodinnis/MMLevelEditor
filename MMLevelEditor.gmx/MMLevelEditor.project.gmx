@@ -12,6 +12,7 @@
     <sprite>sprites\sprArrow</sprite>
     <sprite>sprites\sprTrap</sprite>
     <sprite>sprites\sprEraser</sprite>
+    <sprite>sprites\sprSave</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -19,6 +20,8 @@
     <script>scripts\scrToolState.gml</script>
     <script>scripts\scrToolClicked.gml</script>
     <script>scripts\Dev_Notes.gml</script>
+    <script>scripts\scrEditorCreate.gml</script>
+    <script>scripts\saveMap.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\objWallTool</object>
@@ -39,11 +42,12 @@
     <object>objects\objArrowDn</object>
     <object>objects\objTrap</object>
     <object>objects\objEditor</object>
+    <object>objects\objSave</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\roomEditor</room>
   </rooms>
-  <constants number="13">
+  <constants number="23">
     <constant name="EMPTY">0</constant>
     <constant name="WALL">1</constant>
     <constant name="PLAYER">2</constant>
@@ -57,6 +61,16 @@
     <constant name="GRIDSIZE">32</constant>
     <constant name="LEVELH">736</constant>
     <constant name="LEVELW">512</constant>
+    <constant name="TOOL01">objWall</constant>
+    <constant name="TOOL02">objPlayer</constant>
+    <constant name="TOOL03">objDoor</constant>
+    <constant name="TOOL04">objArrowUp</constant>
+    <constant name="TOOL05">objArrowDn</constant>
+    <constant name="TOOL06">objArrowLt</constant>
+    <constant name="TOOL07">objArrowRt</constant>
+    <constant name="TOOL08">objTrap</constant>
+    <constant name="TOOL09">0</constant>
+    <constant name="TOOL10">0</constant>
   </constants>
   <help>
     <rtf>help.rtf</rtf>
