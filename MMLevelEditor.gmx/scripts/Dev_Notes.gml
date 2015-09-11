@@ -16,3 +16,8 @@ Tool object names adjusted
 Updated scripts, objects
 - Added scripts, objects created during implementation attempt
 - Minor updates to rooms, objects to ensure compatibility
+
+ini Files saving
+- Located file location (%appdata%/Local/Gamedir)
+- Adjusted some var names, types for file purposes
+- Added defaultRoom var and room_exists check to create user_Room000 if none exists

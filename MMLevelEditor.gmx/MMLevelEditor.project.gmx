@@ -3,6 +3,25 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
+  <datafiles number="3" name="datafiles">
+    <datafile>
+      <name>maps.ini</name>
+      <exists>-1</exists>
+      <size>0</size>
+      <exportAction>2</exportAction>
+      <exportDir></exportDir>
+      <overwrite>0</overwrite>
+      <freeData>-1</freeData>
+      <removeEnd>0</removeEnd>
+      <store>0</store>
+      <ConfigOptions>
+        <Config name="Default">
+          <CopyToMask>9223372036854775807</CopyToMask>
+        </Config>
+      </ConfigOptions>
+      <filename>maps.ini</filename>
+    </datafile>
+  </datafiles>
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
@@ -17,9 +36,9 @@
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
+    <script>scripts\Dev_Notes.gml</script>
     <script>scripts\scrToolState.gml</script>
     <script>scripts\scrToolClicked.gml</script>
-    <script>scripts\Dev_Notes.gml</script>
     <script>scripts\scrEditorCreate.gml</script>
     <script>scripts\saveMap.gml</script>
   </scripts>
@@ -47,7 +66,7 @@
   <rooms name="rooms">
     <room>rooms\roomEditor</room>
   </rooms>
-  <constants number="23">
+  <constants number="25">
     <constant name="EMPTY">0</constant>
     <constant name="WALL">1</constant>
     <constant name="PLAYER">2</constant>
@@ -61,6 +80,8 @@
     <constant name="GRIDSIZE">32</constant>
     <constant name="LEVELH">736</constant>
     <constant name="LEVELW">512</constant>
+    <constant name="SAVEFILE">"maps.ini"</constant>
+    <constant name="USERROOM">"room_User"</constant>
     <constant name="TOOL01">objWall</constant>
     <constant name="TOOL02">objPlayer</constant>
     <constant name="TOOL03">objDoor</constant>
