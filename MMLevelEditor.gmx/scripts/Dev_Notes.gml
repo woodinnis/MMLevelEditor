@@ -27,3 +27,8 @@ ini Files loading
 - Added two new keys: name, counts
 - loadMap uses counts in for loops
 - loadMap currently executes with RMB
+
+Saving multiple maps
+- Streamlined saving process, Key/Value checking moved to saveMap()
+- Removed room_exists calls (no longer needed)
+- Cleared unused code
