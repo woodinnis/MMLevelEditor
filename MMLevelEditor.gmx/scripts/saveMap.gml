@@ -3,7 +3,6 @@ file = SAVEFILE;
 if(file_exists(file))
     ini_open(file);
 
-defaultRoom = USERROOM + "000";
 mapName = "";
 testMe = "";
 
@@ -37,7 +36,7 @@ for(j = 0; j < 1000; j++)
 // Set name and count sections
 ini_write_string(mapName, "name", testMe);
 ini_write_real(mapName, "counts", wallCount);
-ini_write_real(mapName, "counts", trapCount);
+//ini_write_real(mapName, "counts", trapCount);
 
 for(i = 0; i < wallCount; i++)
 {

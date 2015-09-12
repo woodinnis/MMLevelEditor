@@ -1,0 +1,38 @@
+// Clear all objects from the level
+
+with(TOOL01)
+    instance_destroy();
+with(TOOL02)
+    instance_destroy();
+with(TOOL03)
+    instance_destroy();
+with(TOOL04)
+    instance_destroy();
+with(TOOL05)
+    instance_destroy();
+with(TOOL06)
+    instance_destroy();
+with(TOOL07)
+    instance_destroy();
+with(TOOL08)
+    instance_destroy();
+with(objWallTool)
+    instance_destroy();
+with(objPlayerTool)
+    instance_destroy();
+with(objDoorTool)
+    instance_destroy();
+with(objArrowToolUp)
+    instance_destroy();
+with(objArrowToolDn)
+    instance_destroy();
+with(objArrowToolLt)
+    instance_destroy();
+with(objArrowToolRt)
+    instance_destroy();
+with(objTrapTool)
+    instance_destroy();
+with(objEraserTool)
+    instance_destroy();
+with(objSave)
+    instance_destroy();

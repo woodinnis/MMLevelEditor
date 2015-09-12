@@ -67,7 +67,7 @@
         <arguments>
           <argument>
             <kind>9</kind>
-            <script>loadMap</script>
+            <script>scrLevelSelect</script>
           </argument>
           <argument>
             <kind>0</kind>

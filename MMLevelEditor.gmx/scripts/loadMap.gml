@@ -3,7 +3,8 @@ file = SAVEFILE;
 if(file_exists(file))
     ini_open(file);
 
-mapName = defaultRoom;
+mapName = argument0;
+
 newRoom = ini_read_string(mapName, "name", 0);
 wallCount = ini_read_real(mapName, "counts", 0);
 

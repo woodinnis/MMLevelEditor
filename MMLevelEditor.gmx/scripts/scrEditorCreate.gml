@@ -1,6 +1,8 @@
 // Set global variables for the level editor
 globalvar currentTool;
+globalvar defaultRoom;
 currentTool = EMPTY;
+defaultRoom = USERROOM + "000";
 
 // Object variables
 wall = TOOL01;

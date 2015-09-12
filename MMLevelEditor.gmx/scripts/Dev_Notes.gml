@@ -32,3 +32,9 @@ Saving multiple maps
 - Streamlined saving process, Key/Value checking moved to saveMap()
 - Removed room_exists calls (no longer needed)
 - Cleared unused code
+
+Loading multiple maps
+- Any of multiple maps can be loaded
+- When "load" button is pressed, pop-up cycles through available maps
+- Clears all objects from room, loads selected map
+- Minor code edits
