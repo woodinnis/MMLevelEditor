@@ -38,3 +38,6 @@ Loading multiple maps
 - When "load" button is pressed, pop-up cycles through available maps
 - Clears all objects from room, loads selected map
 - Minor code edits
+
+Save/Load all objects
+- All objects now save or load with the room
