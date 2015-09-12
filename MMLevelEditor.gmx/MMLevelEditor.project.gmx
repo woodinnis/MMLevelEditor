@@ -44,6 +44,8 @@
     <script>scripts\loadMap.gml</script>
     <script>scripts\scrLevelSelect.gml</script>
     <script>scripts\clearLevel.gml</script>
+    <script>scripts\write.gml</script>
+    <script>scripts\read.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\objWallTool</object>

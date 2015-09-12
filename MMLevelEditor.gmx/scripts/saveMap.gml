@@ -41,12 +41,7 @@ for(i = 0; i < wallCount; i++)
 {
     me = instance_find(wall, i);
 
-    ini_write_real(mapName, "wall" + string(i) + string(objIndex), me.object_index);
-    objIndex++;
-    ini_write_real(mapName, "wall" + string(i) + string(objIndex), me.x);
-    objIndex++;
-    ini_write_real(mapName, "wall" + string(i) + string(objIndex), me.y);
-    objIndex = 0;
+    write("wall",i);
 }
 
 // Store trap locations
@@ -54,12 +49,7 @@ for(i = 0; i < trapCount; i++)
 {
     me = instance_find(trap, i);
 
-    ini_write_real(mapName, "trap" + string(i) + string(objIndex), me.object_index);
-    objIndex++;
-    ini_write_real(mapName, "trap" + string(i) + string(objIndex), me.x);
-    objIndex++;
-    ini_write_real(mapName, "trap" + string(i) + string(objIndex), me.y);
-    objIndex = 0;
+    write("trap",i);
 }
 
 // Store player start location
@@ -67,12 +57,7 @@ if(instance_exists(player))
 {
     me = instance_find(player, 0);
     
-    ini_write_real(mapName, "player" + string(objIndex), me.object_index);
-    objIndex++;
-    ini_write_real(mapName, "player" + string(objIndex), me.x);
-    objIndex++;
-    ini_write_real(mapName, "player" + string(objIndex), me.y);
-    objIndex = 0;
+    write("player", -1);
 }
 
 // Store door location
@@ -80,12 +65,7 @@ if(instance_exists(door))
 {
     me = instance_find(door, 0);
     
-    ini_write_real(mapName, "door" + string(objIndex), me.object_index);
-    objIndex++;
-    ini_write_real(mapName, "door" + string(objIndex), me.x);
-    objIndex++;
-    ini_write_real(mapName, "door" + string(objIndex), me.y);
-    objIndex = 0;
+    write("door", -1);
 }
 
 // Store arrow locations
@@ -94,47 +74,27 @@ if(instance_exists(up))
 {
     me = instance_find(up, 0);
     
-    ini_write_real(mapName, "up" + string(objIndex), me.object_index);
-    objIndex++;
-    ini_write_real(mapName, "up" + string(objIndex), me.x);
-    objIndex++;
-    ini_write_real(mapName, "up" + string(objIndex), me.y);
-    objIndex = 0;
+    write("up", -1);
 }
 // Down
 if(instance_exists(down))
 {
     me = instance_find(down, 0);
     
-    ini_write_real(mapName, "down" + string(objIndex), me.object_index);
-    objIndex++;
-    ini_write_real(mapName, "down" + string(objIndex), me.x);
-    objIndex++;
-    ini_write_real(mapName, "down" + string(objIndex), me.y);
-    objIndex = 0;
+    write("down", -1);
 }
 // Left
 if(instance_exists(left))
 {
     me = instance_find(left, 0);
     
-    ini_write_real(mapName, "left" + string(objIndex), me.object_index);
-    objIndex++;
-    ini_write_real(mapName, "left" + string(objIndex), me.x);
-    objIndex++;
-    ini_write_real(mapName, "left" + string(objIndex), me.y);
-    objIndex = 0;
+    write("left", -1);
 }
 // Right
 if(instance_exists(right))
 {
     me = instance_find(right, 0);
     
-    ini_write_real(mapName, "right" + string(objIndex), me.object_index);
-    objIndex++;
-    ini_write_real(mapName, "right" + string(objIndex), me.x);
-    objIndex++;
-    ini_write_real(mapName, "right" + string(objIndex), me.y);
-    objIndex = 0;
+    write("right", -1);
 }
 ini_close();

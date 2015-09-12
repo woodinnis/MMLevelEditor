@@ -41,3 +41,6 @@ Loading multiple maps
 
 Save/Load all objects
 - All objects now save or load with the room
+
+Read/Write streamlined
+- All read,write operations placed in single functions
